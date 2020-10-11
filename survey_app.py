@@ -172,7 +172,7 @@ st.markdown('One thing that is clear here is that there were not two distinct gr
 
 st.subheader('Interactive Analysis:')
 st.markdown('Want to see how people responded to each of the questions in the survey? Select the question that you are interested in, and this app will produce a histogram of the responses')
-drop_cols_3 = ['Amazon_good', 'Facebook_good', 'Twitter_good', 'Uber_good', 'Google_good', 'Apple_good']
+drop_cols_3 = ['Amazon_good', 'Facebook_good', 'Twitter_good', 'Uber_good', 'Google_good', 'Apple_good', 'Which tech companies do you most admire', "Which news/media companies do the most to help you understand what's happening in the world?", "What are your favorite podcasts? Leave blank if you don't listen to podcasts."]
 cols_for_selection = [i for i in list(df.columns) if i not in drop_cols_3]
 selected_column = st.selectbox('Choose a Question to Analyze', cols_for_selection)
 sns.countplot(df[selected_column], palette='viridis')
