@@ -91,7 +91,7 @@ plt.title('Free market capitalism is the best economic system yet discovered')
 plt.xlabel('')
 st.pyplot()
 
-st.markdown('These responses were very interesting to me given the zeitgeist surrounding capitalism vs socialism. An overwhelming support for capitalism, at least as the best system yet discovered. These next two questions were fascinating to me, social media banning hate speech and 1A.')
+st.markdown('These responses were very interesting to me given the zeitgeist surrounding capitalism vs socialism. An overwhelming support for capitalism, at least as the best system yet discovered.')
 
 df_tech_admire = pd.DataFrame(df['Which tech companies do you most admire?'].value_counts().head(8)).reset_index()
 df_tech_admire.columns = ['Company', 'Mentions']
@@ -99,7 +99,7 @@ sns.barplot(df_tech_admire['Company'], df_tech_admire['Mentions'], palette='viri
 plt.title('Which Tech Companies Are Most Admired?')
 st.pyplot()
 
-st.markdown('Apple clearly dominates this free form response, with some comparatively small companies like Stripe, Tesla, and SpaceX punching way above their weight. The number of people who wrote None was surprising, I could probably guess how they answered the rest of the survey questions.')
+st.markdown('Apple clearly dominates this free form response, with some comparatively small companies like Stripe, Tesla, and SpaceX punching way above their weight. The number of people who wrote None was surprising, I could probably guess how they answered the rest of the survey questions. These next two questions were fascinating to me, social media banning hate speech and 1A.')
 
 sns.countplot(df['How do you feel about the First Amendment of the US Constitution? (The right to free speech.)'], order = ["It's far too permissive and should definitely be revisited.", "It's excessively permissive and should probably be revisited", "Neutral / think it has meaningful pros and cons", "Supportive in most cases", "Very supportive in almost all cases"], palette='viridis')
 plt.xticks(rotation=25)
