@@ -1,0 +1,5 @@
+matplotlib
+streamlit-nightly >= 0.67.1.dev20200921-nightly
+numpy
+pandas
+seaborn
