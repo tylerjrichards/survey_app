@@ -13,7 +13,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 
 st.title('What Do Tech Workers Think About Tech?')
-st.subheader('An Analysis of A Popular Tech Twitter Survey by Sriram Krishnan + [Tyler Richards](http://tylerjrichards.com)')
+st.subheader('An Analysis of A Popular Tech Twitter Survey by [Tyler Richards](http://tylerjrichards.com)')
 
 st.markdown('Last week, Sriram decided to survey his many twitter followers about a large collection of world issues, from climate change to nuclear power to even if they think tech giants do good for the world. This suvey went fairly viral, getting thousands of respondents over the course of a week.')
 st.markdown('   ')
